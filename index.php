@@ -5,7 +5,12 @@ include_once ("libs/ReadFile.php");
 
 
 $result = new ReadFile();
-$res = $result->readFileString(PATH);
-$results = $result->readFileSumbol(PATH);
+$num = 1;
+$strings = $result->readFileString($num);
+
+$numString = 2;
+$numSumbol = 4;
+$sumb = $result->readFileSumbol($numString,$numSumbol);
+
 
 include_once ("template/index.php");

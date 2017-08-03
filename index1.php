@@ -4,10 +4,20 @@ include_once ("conf.php");
 include_once ("libs/ReadFile.php");
 
 
+
 $result = new ReadFile();
-$res = $result->replaceTextFile('test2','ttrrt', PATH);
+$number = 2;
+$change = 'new3';
 
-$results = $result->replaceSumbolFile('t','l', PATH);
+$nums = $number -1;
+$strings = $result->replaceTextFile($number ,$change);
+$stringChange = $result->readFileString($nums);
 
 
-include_once ("template/index1.php");
+$line = 1;
+$sumbol = 1;
+$ress = $result->replaceSumbolFile(1,1,'p');
+
+
+
+include_once ("templa

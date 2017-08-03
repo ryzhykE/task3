@@ -36,30 +36,14 @@
 
     <div class="row marketing">
         <div class="col-lg-6">
-
-
-            <?if($res !== EROOR_OPEN):?>
-
-            <?foreach($res as $k=>$v):?>
-                <h4>Строка №<?= $k;?></h4>
-                <p><?= $v;?></p>
-            <?endforeach;?>
-                <?else:?>
-               <? echo $res;?>
-            <?endif;?>
-
-
-
+            Строка №<?php echo $num;?> = <?echo $strings;?>
         </div>
-
         <div class="col-lg-6">
-            <?if($results !== EROOR_OPEN):?>
-                <p>
-                    <?="$results\n";?>
-                </p>
-            <?endif;?>
+            Строка №<?php echo $numString;?> cимвол № <?echo $numSumbol;?> = <?echo $sumb;?>
         </div>
     </div>
+
+
 
     <footer class="footer">
     </footer>
