@@ -16,8 +16,7 @@ $stringChange = $result->readFileString($nums);
 
 $line = 1;
 $sumbol = 1;
-$ress = $result->replaceSumbolFile(1,1,'p');
+$sumb = 'r';
+$ress = $result->replaceSumbolFile($line,$sumbol,$sumb);
 
-
-
-include_once ("templa
+include_once ("template/index1.php");

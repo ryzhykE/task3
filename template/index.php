@@ -36,10 +36,22 @@
 
     <div class="row marketing">
         <div class="col-lg-6">
-            Строка №<?php echo $num;?> = <?echo $strings;?>
+            <p>
+                String №<?php echo $num;?> = <?echo $strings;?>
+            </p>
+            <?foreach($results as $result):?>
+               <p><?=$result;?></p>
+            <?endforeach;?>
         </div>
         <div class="col-lg-6">
-            Строка №<?php echo $numString;?> cимвол № <?echo $numSumbol;?> = <?echo $sumb;?>
+            <p>
+                String №<?php echo $numString;?> sumbol № <?echo $numSumbol;?> = <?echo $sumb;?>
+            </p>
+            <p>
+                <?foreach($resullSmb as $sumb):?>
+                    <?=$sumb;?>
+                <?endforeach;?>
+            </p>
         </div>
     </div>
 

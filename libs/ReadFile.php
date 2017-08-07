@@ -3,6 +3,7 @@
 class ReadFile
 {
     private $file;
+    public  $arrStr;
 
     public function __construct()
     {
@@ -27,16 +28,7 @@ class ReadFile
        {
            if (is_int($num) && $key== $num)
            {
-               if($value{$numS} !== ' ')
-               {
-                  return $value{$numS};
-
-               }
-               else
-               {
-                   return 'spase';
-               }
-
+                return $value{$numS};
            }
        }
         return EROOR_NUMBER;
@@ -70,6 +62,26 @@ class ReadFile
             return EROOR_ENTER;
         }
 
+    }
+
+    public function printArrStr(){
+        for($i=0; $i<count($this->file); $i++)
+        {
+            $arrStr[]=$this->readFileString($i);
+        }
+        return $arrStr;
+    }
+
+    public function printArrSymbol()
+    {
+        for($i=0; $i<count($this->file); $i++)
+        {
+            for ($n=0; $n<strlen($this->readFileString($i)); $n++)
+            {
+                $arrSymbol[] = $this->readFileSumbol($i, $n);
+            }
+        }
+        return $arrSymbol;
     }
 
 }

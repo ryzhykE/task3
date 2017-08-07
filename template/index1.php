@@ -35,10 +35,10 @@
 
     <div class="row marketing">
         <div class="col-lg-6">
-            Строка №<?php echo $number;?> =  <?echo $stringChange;?>
+            String №<?php echo $number;?> change in to <?echo $stringChange;?>
         </div>
         <div class="col-lg-6">
-            Строка №<?php echo $line;?> Символ №<?echo $sumbol;?> заменить на <?echo $sumb;?>
+            String №<?php echo $line;?> sumbol №<?echo $sumbol;?> change in to <?echo $sumb;?>
         </div>
     </div>
 
